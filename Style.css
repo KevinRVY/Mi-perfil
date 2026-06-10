@@ -1,0 +1,54 @@
+/* 1. Fondo de la página y tipo de letra */
+body {
+    background-color: #f4f6f9; /* Color gris claro de fondo */
+    font-family: Arial, sans-serif;
+    color: #333; /* Texto gris oscuro para que no canse la vista */
+    padding: 50px;
+    text-align: center; /* Centra todo el contenido */
+}
+
+/* 2. El cuadro blanco del centro (tu perfil) */
+.contenedor {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto; /* Centra el cuadro en la pantalla */
+    padding: 30px;
+    border-radius: 8px; /* Bordes un poquito redondeados */
+    border: 1px solid #ddd; /* Un borde gris muy delgadito */
+}
+
+/* 3. Colores de los títulos */
+h1, h3 {
+    color: #1a365d; /* Azul marino profesional */
+}
+
+h2 {
+    color: #555; /* Gris para el subtítulo */
+}
+
+/* 4. Alinear la lista de intereses a la izquierda para que se vea ordenada */
+ul {
+    text-align: left;
+    margin: 20px 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* 5. El botón interactivo */
+button {
+    background-color: #1a365d; /* Azul marino */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer; /* Hace que aparezca la manito al pasar el mouse */
+}
+
+/* 6. El texto que aparece con JavaScript */
+#mensaje-oculto {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2b6cb0;
+}
