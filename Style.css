@@ -1,54 +1,131 @@
-/* 1. Fondo de la página y tipo de letra */
+/* 1. Fondo moderno con un degradado sutil */
 body {
-    background-color: #f4f6f9; /* Color gris claro de fondo */
-    font-family: Arial, sans-serif;
-    color: #333; /* Texto gris oscuro para que no canse la vista */
-    padding: 50px;
-    text-align: center; /* Centra todo el contenido */
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d3748;
+    padding: 60px 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 2. El cuadro blanco del centro (tu perfil) */
+/* 2. Caja del perfil con sombra elegante (Efecto Tarjeta Flotante) */
 .contenedor {
     background-color: white;
-    max-width: 500px;
-    margin: 0 auto; /* Centra el cuadro en la pantalla */
-    padding: 30px;
-    border-radius: 8px; /* Bordes un poquito redondeados */
-    border: 1px solid #ddd; /* Un borde gris muy delgadito */
+    max-width: 450px;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 16px; /* Bordes más suaves */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 20px 48px rgba(26, 54, 93, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-/* 3. Colores de los títulos */
-h1, h3 {
-    color: #1a365d; /* Azul marino profesional */
+/* Efecto interactivo al pasar el mouse por la tarjeta */
+.contenedor:hover {
+    transform: translateY(-50px);
+}
+
+/* 3. Estilo de la foto de cabecera */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #1a365d;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+
+/* 4. Tipografías impecables */
+h1 {
+    color: #1a365d;
+    font-size: 26px;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 h2 {
-    color: #555; /* Gris para el subtítulo */
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* 4. Alinear la lista de intereses a la izquierda para que se vea ordenada */
-ul {
+.presentacion {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #718096;
+    margin-bottom: 25px;
+}
+
+/* 5. Lista de intereses estilizada (Sin viñetas aburridas) */
+.intereses h3 {
+    color: #1a365d;
+    font-size: 15px;
     text-align: left;
-    margin: 20px 0;
+    margin-bottom: 12px;
+}
+
+ul {
+    list-style: none; /* Quitamos los puntitos feos */
+    padding: 0;
+    margin: 0 0 30px 0;
 }
 
 li {
-    margin-bottom: 10px;
+    text-align: left;
+    background-color: #f7fafc; /* Fondo gris para cada ítem */
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    border-left: 4px solid #2b6cb0; /* Línea azul al costado */
 }
 
-/* 5. El botón interactivo */
+li strong {
+    color: #2b6cb0;
+}
+
+/* 6. Botón Premium Moderno con animación */
 button {
-    background-color: #1a365d; /* Azul marino */
+    background-color: #1a365d;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer; /* Hace que aparezca la manito al pasar el mouse */
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%; /* Botón ancho total */
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+    transition: all 0.2s ease;
 }
 
-/* 6. El texto que aparece con JavaScript */
+button:hover {
+    background-color: #2b6cb0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(43, 108, 176, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* 7. Mensaje sorpresa de JavaScript */
 #mensaje-oculto {
-    margin-top: 15px;
-    font-weight: bold;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
     color: #2b6cb0;
+    line-height: 1.5;
+    background-color: #ebf8ff;
+    padding: 12px;
+    border-radius: 6px;
 }
