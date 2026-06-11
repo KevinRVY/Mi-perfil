@@ -129,3 +129,65 @@ button:active {
     padding: 12px;
     border-radius: 6px;
 }
+/* --- ESTILOS DE LA SECCIÓN DE CONTACTO --- */
+.seccion-contacto {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0; /* Línea sutil divisoria */
+}
+
+.seccion-contacto h3 {
+    font-size: 14px;
+    color: #4a5568;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.botones-contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Estilo base para cada botón de red social */
+.btn-red {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none; /* Le quita la línea azul de enlace */
+    border-radius: 8px;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+/* Colores corporativos de cada marca y efectos al pasar el mouse (Hover) */
+.outlook {
+    background-color: #0078d4;
+}
+.outlook:hover {
+    background-color: #005a9e;
+    transform: translateY(-2px);
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+.whatsapp:hover {
+    background-color: #1ebd56;
+    transform: translateY(-2px);
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+.facebook:hover {
+    background-color: #166fe5;
+    transform: translateY(-2px);
+}
